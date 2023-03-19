@@ -63,7 +63,7 @@ class GenresController {
 
       await GenreModel.deleteGenre(id);
 
-      res.status(200);
+      res.status(200).end();
     } catch (e) {
       return res
         .status(500)
